@@ -34,7 +34,7 @@ app.get('/api', (req, res) => {
 
 app.get('/api/apikey', (req, res) => {
     // Exposing your API key like this can be dangerous. Be cautious.
-    res.json({ apiKey, apiKeySource });
+    res.json({ message: 'Welcome to SecureEnvAPIKeyServer-PreventsKeyExposure!', apiKey, apiKeySource });
 });
 
 // Start the server
